@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=yy, initial-scale=1.0">
+        <title>O semeador</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Conexão - CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script defer="defer" src="js\script.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/styles-agendar.css">
+        <!-- Conexão - fonte -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <div class="buttonzap">
+            <a
+                href='https://api.whatsapp.com/send?phone=11973668766&'
+                class="iconzap"
+                target='_blank'>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agendar-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doacao.html">Doações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+
+                <div class="agendar-button">
+                    <a href="agende.html"><button>AGENDE SUA VISITA</button></a>
+                </div>
+            </div>
+
+            <div class="container">
+                <form
+                    class="mensagem-enviada"
+                    >
+                    <section class="agendar ">
+                        <div class="titulo">
+                            <div class="agende-text d-flex">
+                                <h1>AGENDE</h1>
+                                <img src="/IMAGENS/seta-png.png" alt="seta" class="seta">
+                            </div>
+                            <p>Preencha os dados abaixo</p>
+                        </div>
+                        <input type="hidden" name="_subject" value="Nova requisição de agendamento!">
+                        <!-- Responsável -->
+                        <div class="form-responsavel">
+                            <label for="nome" class="form-label mt-4 d-flex">Responsavel:</label>
+                            <div class="responsavel d-flex">
+                                <div class="name campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="nome_responsavel" id="nome" placeholder="Nome" required="required">
+                                </div>
+                                <div class="surname campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="sobrenome_responsavel" id="sobrenome" placeholder="Sobrenome" required="required">
+                                </div>
+                                <div class="email campo col-12 col-md-8">
+                                    <input class="form-control" type="text" name="email_responsavel" id="email" placeholder="exemplo@gmail.com" required="required">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Aluno -->
+                        <div class="form-aluno">
+                            <label for="nome" class="form-label mt-4 d-flex">Aluno:</label>
+                            <div class="aluno d-flex">
+                                <div class="name campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="nome_aluno" id="nome" placeholder="Primeiro nome" required="required">
+                                </div>
+                                <div class="surname campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="sobrenome_aluno" id="sobrenome" placeholder="Sobrenome" required="required">
+                                </div>
+                            </div>
+                            <div class="aluno d-flex">
+                                <div class="telefone campo col-12 col-md-4">
+                                    <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Telefone residencial" required="required">
+                                </div>
+                                <div class="celular campo col-12 col-md-4">
+                                    <input class="form-control" type="text" name="celular" id="celular" placeholder="Celular" required="required">
+                                </div>
+                            </div>
+                        </div>
+            
+                            <!-- Período -->
+                            <div class="agenda row">
+                                <div class="periodo col-10 col-lg-11">
+                                    <label for="periodo" class="form-label-periodo mt-4">Período:</label>
+                                    <div class="periodo campo col-12 col-md-8">
+                                        <input class="form-control" type="text" name="periodo" id="periodo" placeholder="Período desejado" required="required">
+                                    </div>
+                                </div>
+                                
+                                <div class="data col-10 col-lg-11">
+                                    <label for="data" class="form-label-data mt-4">Data:</label>
+                                    <div class="data campo col-12 col-md-8">
+                                        <input class="form-control" id="data" name="data" type="text" 
+                                        placeholder="DD/MM/AAAA" 
+                                        onfocus="this.type='date'" 
+                                        required="required"
+                                        onblur="if (!this.value) this.type='text'">
+                                    </div>
+                                </div>
+                            </div>
+                
+                        <!-- Botão Enviar -->
+                        <button type="submit" class="btn enviar" data-button>Enviar</button>
+                    </section>
+                </form>
+            </div>
+
+            <footer class="bg text-white pt-1 pb-4">
+                <div class="containertext-center text-md-left">
+                    <div class="row mx-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <img
+                                class="text-uppercase mb-4 font-weight-bold text-warning"
+                                src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                                alt="Logo do oSemeador">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Horários</h1>
+                            <p>segunda a sexta:
+                                <br>
+                                07:30 - 17:00
+                            </p>
+                            <br>
+                            <h1>Endereço</h1>
+                            <p>R. dos Meninos, 555 -
+                                <br>
+                                Nova Gerti, São Caetano
+                                <br>
+                                do Sul - SP, 09580-300
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Contato</h1>
+                            <p>(11)4238-3100
+                                <br>
+                                (11) 4238-9511
+                                <br>
+                                adm.osemeador@3remetodista.org.br
+                            </p>
+                            <br>
+                            <h1>Siga-nos</h1>
+                            <div class="footer-social-media">
+                                <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                </a>
+                                <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <ul>
+                                <li>
+                                    <h1>Acesso Rápido</h1>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="index.html">Página Inicial</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="fotos.html">Fotos e Projetos</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="doacao.html">Doações</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="contato.html">Contato</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="matricula.html">Matrícula</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr class="mb-4">
+
+                    </div>
+
+                </footer>
+                <div class="copy d-flex mx-auto mt-">
+                    <p>&#169 Copyright 1974-2024 | Escola oSemeador</p>
+                </div>
+                <script src="js/scripts.js"></script>
+                <div vw="vw" class="enabled">
+                    <div vw-access-button="vw-access-button" class="active"></div>
+                    <div vw-plugin-wrapper="vw-plugin-wrapper">
+                        <div class="vw-plugin-top-wrapper"></div>
+                    </div>
+                </div>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window
+                        .VLibras
+                        .Widget('https://vlibras.gov.br/app');
+                </script>
+            </body>
+        </html>

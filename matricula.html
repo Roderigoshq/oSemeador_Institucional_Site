@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O semeador</title>
+
+        <!-- Estilos -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <script defer="defer" src="/js/script.js"></script>
+        <link rel="stylesheet" href="/css/styles-matricula.css">
+        <!-- Conexão - fonte -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link
+                rel="preconnect"
+                href="https://fonts.gstatic.com"
+                crossorigin="crossorigin">
+            <link
+                href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+                rel="stylesheet">
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Progress Bar -->
+        <script src="js/progressbar.min.js"></script>
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+        <div class="buttonzap">
+            <a href='https://api.whatsapp.com/send?phone=11973668766&'class="iconzap" target='_blank'><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agendar-button">
+                    <a href="agende.html"><button>AGENDE SUA VISITA</button></a>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doacao.html">Doações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+
+                <div class="agendar-button">
+                    <a href="agende.html"><button>AGENDE SUA VISITA</button></a>
+                </div>
+            </div>
+        </header>
+    </body>
+    <title>Matrícula Escolar</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row"> 
+            <div class="imagem-matricula col-8">
+                <div class="titulos-banner d-flex">
+                    <h1>MATRÍCULE-SE</h1>
+                    <h3>Venha Conhecer o semeador!</h3>
+                </div>
+                <div class="row redirect-preencha" >
+                    <img src="/IMAGENS/Rectangle_White.png" alt="retangulo" class="retangulo">
+                    <p>Preencha o formulário ao lado e <br> 
+                        agende sua visita</p>
+                </div>
+            </div>
+            <div class="container mt-0 col-lg-4 col-12">
+                <div class="formulario">
+                    <div class="titulo">
+                        <div class=" matricula-text row">
+                            <h1>MATRÍCULA</h1>
+                            <img src="/IMAGENS/seta-png.png" alt="seta" width="40" height="40" class="seta">
+                        </div>
+                        <p>Preencha os dados abaixo:</p>
+                        <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
+                    </div>
+                    <label for="nome" class="form-label ml-3 mt-4">Responsável:</label>
+                    <form id="matriculaForm" class="matricula d-flex" >
+                        <div class="surname campo col-6 ">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Primeiro nome"
+                                required="required">
+                        </div>
+                        <div class="name campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="sobrenome"
+                                id="sobrenome"
+                                placeholder="Sobrenome"
+                                required="required">
+                        </div>     
+                        <div class="email campo col-12">
+                            <for="email" class = "endereço de email col-12"></for>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="exemplo@gmail.com"
+                                required="required">
+                        </div>
+                        <div class="campo col-12">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="telefone"
+                                id="telefone"
+                                placeholder="telefone do responsável"
+                                required="required">
+                        </div>
+                        <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
+                        <div id="matriculaForm" class="matricula d-flex" >
+                            <div class="surname campo col-6 ">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome"
+                                    id="nome"
+                                    placeholder="Primeiro nome"
+                                    required="required">
+                            </div>
+                            <div class="name campo col-6">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn enviarMatricula">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg text-white pt-1 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row mx-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img
+                        class="text-uppercase mb-4 font-weight-bold text-warning"
+                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                        alt="Logo do oSemeador">
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Horários</h1>
+                    <p>segunda a sexta:
+                        <br>
+                        07:30 - 17:00</p>
+                    <br>
+                    <h1>Endereço</h1>
+                    <p>R. dos Meninos, 555 -
+                        <br>
+                        Nova Gerti, São Caetano
+                        <br>
+                        do Sul - SP, 09580-300</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Contato</h1>
+                    <p>(11) 1111-1111
+                        <br>
+                        (22) 2222-2222
+                        <br>
+                        lorem@impsum.com.br</p>
+                    <br>
+                    <h1>Siga-nos</h1>
+                    <div class="footer-social-media">
+                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <ul>
+                        <li>
+                            <h1>Acesso Rápido</h1>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="/index.html">Página Inicial</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="/fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="/doacao.html">Doações</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="/contato.html">Contato</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="/matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="mb-4">
+                
+            </div>
+            
+        </footer>
+        <div class="copy d-flex mx-auto">
+                <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+        </div><!-- copy d-flex mx-auto -->
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            <script src="js/scripts.js"></script>
+            <div vw="vw" class="enabled">
+                <div vw-access-button="vw-access-button" class="active"></div>
+                <div vw-plugin-wrapper="vw-plugin-wrapper">
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window
+                    .VLibras
+                    .Widget('https://vlibras.gov.br/app');
+            </script>
+        </body>
+    </main>
+</html>

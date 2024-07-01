@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background:white;
+}
+body {
+    overflow-x: hidden;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    padding-top: 15px;
+}
+
+.logo {
+
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    font-weight: 600;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.0);
+}
+
+.nav-item:hover {
+    transform: scale(1.1)
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #242424;
+    transition: .5s;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #242424;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    background-color: #242424;
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #242424;
+}
+
+.nav-bar .agendar-button button {
+    border: solid 1px #6D6D6D;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 6px 18px;
+    color: #242424;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 21px;
+    transition: transform 0.5s, background-color 0.3s ease-out 10ms;
+  transform: translateX(0) scale(1);
+}
+
+.agendar-button button:hover {
+    border: solid 1px #F79824 ;
+    background-color: #F79824;
+    color: white;
+    transform: scale(1.1)
+}
+
+.agendar-button:hover {
+    color: white;
+}
+
+.agendar-button a {
+    text-decoration: none;
+    color: #242424;
+}
+
+.agendar-button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu .agendar-button button {
+    border: solid 1px #6D6D6D;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 6px 18px;
+    color: #242424;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: transform 0.5s, background-color 0.3s ease-out 10ms;
+  transform: translateX(0) scale(1);
+}
+
+.mobile-menu .agendar-button button:hover{
+    border: solid 1px #F79824 ;
+    background-color: #F79824;
+    color: white;
+    transform: scale(1.1)
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .agendar-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        color: #242424;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon button{
+        outline: thin dotted;
+            outline: 0px auto -webkit-focus-ring-color;
+            outline-offset: 0px;
+        }
+    .mobile-menu-icon button {
+        outline: thin dotted;
+            outline: 0px auto -webkit-focus-ring-color;
+            outline-offset: 0px;
+        }
+
+    .icon {
+        margin-top: 15px;
+        width: 40px;
+    }
+    
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .agendar-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .agendar-button button {
+        width: 100%;
+    }
+
+    .mobile-menu .agendar-button a {
+        text-decoration: none;
+        color: #242424;
+    }
+    
+    .mobile-menu .agendar-button a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-link:hover:after {
+        display: none;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+
+
+.main-banner {
+    background: url(/IMAGENS/IMG-fundo-pag-inicial.png) no-repeat center;
+    position: relative;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+
+}
+
+#banner {
+    font-family: 'Poppins';
+}
+
+.main-banner h1 {
+    color: white;
+    flex-shrink: 0;
+    font-size: 50px;
+    font-style: normal;
+    font-family: 'Poppins';
+    font-weight: 600;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-banner p {
+    color:white;
+    font-size: 10px;
+    font-weight: 100px;
+    padding-bottom: 20px ;
+    position: relative;
+}
+
+.veja-mais {
+    background-color: #F79824;
+    color: white;
+    border: #F79824;
+    border-radius: 4;
+    padding: 6px 16px;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+    font-weight: 500;
+
+}
+
+.veja-mais:hover {
+    background-color: #242424;
+    border: #242424;
+    color: white;
+}
+
+.veja-mais:focus{
+    outline: thin dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+        outline-offset: 0px;
+    }
+    .veja-mais:focus {
+     outline: thin dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+        outline-offset: 0px;
+    }
+
+.main-banner {
+    position: relative;
+    margin-left: auto ;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: auto;
+    margin-left: 58.5px;
+}
+
+@media screen and (max-width:700px){
+    .gallery{
+        margin-left: 0px;
+    }
+}
+
+.gallery h1 {
+    position: relative;
+    color: #242424;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.gallery #seta {
+    transform: rotate(90deg);
+}
+
+
+.redirect-message {
+    text-align: center;
+}
+
+.jf-center{
+    justify-content: center;
+}
+
+.gap-5 {
+    gap: 10px;
+}
+
+.w350 {
+    width: 350px;
+}
+.h350 {
+    height: 350px;
+}
+
+.gallery-items img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+.gallery-items img:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+
+}
+
+.rectangle,
+.rectangle * {
+  box-sizing: border-box;
+}
+.rectangle {
+  background: #d9d9d9;
+  height: 1px;
+  margin-bottom: 40px;
+}
+
+.text-message-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.text-message{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    width: 400px;
+    
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: auto;
+    margin-left: 58.5px;
+}
+
+.projects h1 {
+    position: relative;
+    color: #242424;
+    font-family: "Poppins";
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+@media screen and (max-width:700px){
+    .projects{
+        margin-left: 0px;
+    }
+}
+
+.projects #seta {
+    transform: rotate(90deg);
+}
+
+.card {
+    transition: 500ms linear; 
+    border: 1px solid #b6b6b6;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow:
+                1px 1px #b1b1b1,
+                2px 2px #b1b1b1,
+                3px 3px #b1b1b1;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+
+/* Footer c/copyright */
+
+.bg {
+    background: #202249;
+}
+.col-md-2{
+    text-align: center;
+}
+.bg h1 {
+    color: #F79824;
+    font-weight: 700;
+}
+.bg ul {
+    list-style: none;
+    text-align: center;
+}
+.bg a {
+    color: white;
+}
+.footer-item{
+    font-weight: 500;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.0);
+ }
+
+ .footer-item:hover{
+    color: #d3d3d3;
+    transform: scale(1.1);
+ }
+
+/* copyright */
+
+.copyright{
+    display: flex;
+    text-align: center;
+    background-color: #1a1c3b;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #1a1c3b;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+
+/* zap */
+.iconzap {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+  }
+  
+  .iconzap .fab{
+    padding-top: 9px;
+  }
+  
+  .iconzap:hover{
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+  }
