@@ -1,11 +1,20 @@
-## 🌱 Site Semeador (Sugestão) 🌱
+## 🌱 Site Institucional oSemeador 🌱
 
-Este projeto parece ser um website, possivelmente para uma instituição chamada "Semeador", construído com tecnologias web clássicas como HTML, CSS e JavaScript, com integrações extras como Google Drive.
+Este projeto é um website, para uma instituição chamada "oSemeador", construído com tecnologias web clássicas como HTML, CSS e JavaScript, com integrações extras como Google Drive.
+
+## Integrantes (Alunos do Instituto Mauá da Tecnologia):
+
+- Gabriel Laxy
+- Luiz Miguel Rocha Seixeiro
+- Henry Minoru
+- Rodrigo Shiraishi
+- Paulo Vinicius de Campos
+- Gabriel Moreno
 
 ## 🎨 Design e Imagens:
 
-- O projeto possui uma pasta dedicada (`IMAGENS`) com diversos arquivos de imagem, incluindo banners, logotipos e elementos visuais. 
-- A presença de arquivos CSS específicos (como `styles-agendar.css`, `styles-contato.css`) indica um cuidado com o estilo de cada seção do site.
+- O projeto possui uma pasta dedicada com diversos arquivos de imagem, incluindo banners, logotipos e elementos visuais. 
+- A presença de arquivos CSS específicos indica um cuidado com o estilo de cada seção do site.
 
 ## 💻 Tecnologias Utilizadas:
 
@@ -15,9 +24,7 @@ Este projeto parece ser um website, possivelmente para uma instituição chamada
 
 ## 🔌 Integrações:
 
-- Google Drive (sugerido pela presença de `js/google_drive.js`)
-
-## 📂 Estrutura do Projeto:
+- Google Drive 
 
 ### 📄 Páginas Principais:
 
@@ -35,7 +42,7 @@ Este projeto parece ser um website, possivelmente para uma instituição chamada
 
 ### 📁 JavaScript:
 
-- `js/script.js` 🧠: Scripts principais do site.
+- `js/scripts.js` 🧠: Scripts principais do site.
 - `js/enviar_email.js` 📧: Script para envio de emails (formulário de contato, por exemplo).
 - `js/google_drive.js` 💾: Script para integração com o Google Drive.
 
@@ -47,12 +54,3 @@ Este projeto parece ser um website, possivelmente para uma instituição chamada
 ### 📄 Arquivos da Raiz:
 
 - `README.md` 📄: Este arquivo, com a documentação do projeto.
-
-## Próximos Passos:
-
-- Descrever o propósito e funcionalidades do site Semeador com mais detalhes.
-- Detalhar o processo de agendamento, matrícula ou outras interações-chave.
-- Fornecer instruções sobre como executar o projeto localmente, caso seja aplicável.
-- Adicionar links para recursos externos, como o Google Drive da instituição. 
-
-
